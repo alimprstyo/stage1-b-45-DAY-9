@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Navbar</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="./assets/img/dumbways.png" width="55" height="45" alt="icon">
+            <ul>
+                <li >
+                   <a class="home" href="index.html">Home</a>
+                 </li>
+                <li >
+                   <a href="blog.html">My Project</a>
+                 </li>
+                <li >
+                   <a href="testimonial.html">Testimonials</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a href="contact.html">
+                <button>Contact Me</button>
+            </a>
+        </div>
+        <div id="barMenu">
+            <button onclick="openBar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navContainer"> 
+        <a href="index.html" class="home">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">
+            <button>Contact Me</button>
+        </a>
+    </div>
+
+    <div class="container-card">
+        <div class="content-card">
+            <h1>Hi Welcome to my hut</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis deleniti, ab molestiae in iusto ex excepturi repudiandae recusandae consequatur impedit labore alias quam libero eveniet fugiat inventore deserunt corrupti.
+            Dolores corporis totam doloribus, unde delectus corrupti veniam exercitationem quam molestias aliquid magnam, maiores quidem officiis dicta numquam possimus, tenetur dolore voluptate dolorem eum consectetur! Natus numquam molestiae architecto commodi.</p>
+            <!-- Button -->
+            <div class="contact">
+                <a href="contact.html">
+                    <button>Contact</button>
+                </a>
+                <span>
+                    download CV
+                    <i class="fa-solid fa-download"></i> 
+                </span>
+            </div>
+            <!-- Social Media -->
+            <div class="social-media">
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/alimprstyo?tab=repositories" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/alimprasetyo96/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/golden5249/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <div class="img-card">
+            <img src="./assets/img/profile.jpeg" alt="profile">
+            <h3>Alim Prasetyo Putra Sinambela</h3>
+            <span>Fullstack Developer</span>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

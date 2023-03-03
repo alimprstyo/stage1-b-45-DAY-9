@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="./assets/img/dumbways.png" width="55" height="45" alt="icon">
+            <ul>
+                <li >
+                   <a href="index.html">Home</a>
+                 </li>
+                <li >
+                   <a id="blog" href="blog.html">My Project</a>
+                 </li>
+                 <li >
+                    <a href="testimonial.html">Testimonials</a>
+                  </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a href="contact.html">
+                <button>Contact Me</button>
+            </a>
+        </div>
+        <div id="barMenu">
+            <button onclick="openBar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navContainer"> 
+        <a href="index.html">Home</a>
+        <a href="blog.html" id="blog">My Project</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">
+            <button>Contact Me</button>
+        </a>
+    </div>
+
+
+    <section id="addPost">
+        <div class="container">
+            <h2>Add New Post</h2>
+            <form onsubmit="getData(event)">
+                <label for="projectName">project name</label>
+                <input type="text" id="projectName">
+                
+                <div class="dateInput">
+                    <div>
+                        <label for="startDate" >start date</label>
+                        <input type="date" id="startDate" disabled>
+                    </div>
+                    <div>
+                        <label for="endDate">end date</label>
+                        <input type="date" id="endDate">
+                    </div>
+                </div>
+
+                <label for="description">description</label>
+                <textarea id="description" cols="30" rows="5"></textarea>
+    
+                <label>technologoies</label>
+                <div class="tech">
+                    <div>
+                        <input type="checkbox" id="nodejs" style="margin-right: 10px;" value="nodejs">
+                        <label for="nodejs">node js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nextjs" style="margin-right: 10px;" value="nextjs">
+                        <label for="nextjs">next js</label>
+                    </div>
+                    <div >
+                        <input type="checkbox" id="reactjs" style="margin-right: 10px;" value="reactjs">
+                        <label for="reactjs">react js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="typescript" style="margin-right: 10px;" value="typescript">
+                        <label for="typescript">TypeScript</label>
+                    </div>    
+                </div>
+
+                <label for="image">upload image</label>
+                <div class="uploadImage">
+                    <input type="file" id="image" />
+                    <i class="fa-solid fa-paperclip"></i>
+                </div>
+
+                <div id="button">
+                    <button id="submit">Create post</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="listPosts">
+        <h3>My Project</h3>
+        <div class="posts" id="posting">
+           <a href="blog-detail.html">
+                <div class="card">
+                    <img src="https://source.unsplash.com/360x200?programming" alt="post" >
+                    <h4>Project 1</h4>
+                    <span>Duration : 3 Month</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et consectetur debitis recusandae. Assumenda eius, eaque, expedita molestias voluptatibus</p>
+                    <div class="technologyIcon">
+                        <img src="./assets/img/nodejs.svg" alt="nodejs">
+                        <img src="./assets/img/reactjs.svg" alt="reactjs">
+                        <img src="./assets/img/nextjs.svg" alt="nextjs">
+                        <img src="./assets/img/typescript.svg" alt="typescript">
+                    </div>
+                    <div class="action">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+           </a>
+
+            <a href="blog-detail.html">
+                <div class="card">
+                    <img src="https://source.unsplash.com/360x200?programming" alt="post" >
+                    <h4>Project 2</h4>
+                    <span>Duration : 3 Month</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et consectetur debitis recusandae. Assumenda eius, eaque, expedita molestias voluptatibus</p>
+                    <div class="technologyIcon">
+                        <img src="./assets/img/nodejs.svg" alt="nodejs">
+                        <img src="./assets/img/reactjs.svg" alt="reactjs">
+                        <img src="./assets/img/nextjs.svg" alt="nextjs">
+                        <img src="./assets/img/typescript.svg" alt="typescript">
+                    </div>
+                    <div class="action">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="blog-detail.html">
+                <div class="card">
+                    <img src="https://source.unsplash.com/360x200?programming" alt="post" >
+                    <h4>Project 3</h4>
+                    <span>Duration : 3 Month</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et consectetur debitis recusandae. Assumenda eius, eaque, expedita molestias voluptatibus</p>
+                    <div class="technologyIcon">
+                        <img src="./assets/img/nodejs.svg" alt="nodejs">
+                        <img src="./assets/img/reactjs.svg" alt="reactjs">
+                        <img src="./assets/img/nextjs.svg" alt="nextjs">
+                        <img src="./assets/img/typescript.svg" alt="typescript">
+                    </div>
+                    <div class="action">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <script src="./js/blog.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form </title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="./assets/img/dumbways.png" width="55" height="45" alt="icon">
+            <ul>
+                <li >
+                   <a href="index.html">Home</a>
+                 </li>
+                <li >
+                   <a href="blog.html">My Project</a>
+                 </li>
+                 <li >
+                    <a href="testimonial.html">Testimonials</a>
+                  </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <a href="contact.html">
+                <button>Contact Me</button>
+            </a>
+        </div>
+        <div id="barMenu">
+            <button onclick="openBar()">
+                <i class="fa-solid fa-bars" id="hamburger"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navContainer"> 
+        <a href="index.html">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">
+            <button>Contact Me</button>
+        </a>
+    </div>
+
+
+    <div class="container">
+        <h2>Get in touch</h2>
+        <form>
+            <label for="name">name</label>
+            <input type="text" id="name">
+
+            <label for="email">email</label>
+            <input type="text" id="email">
+
+            <label for="phoneNumber">phone number</label>
+            <input type="text" id="phoneNumber">
+
+            <label for="subject">subject</label>
+            <select id="subject">
+                <option disabled selected></option>
+                <option>Collaboration</option>
+                <option>Discussion</option>
+                <option>Hiring</option>
+            </select>
+
+            <label for="message">your message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+        </form>
+        <div id="button">
+            <button id="submit">Sumbit</button>
+        </div>
+    </div>
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
